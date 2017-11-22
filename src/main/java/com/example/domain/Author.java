@@ -20,8 +20,8 @@ public class Author {
 	private String lastName;
 	
 	//Books
-	@OneToMany(mappedBy = "author")
-	private java.util.List<Book> books;
+	//@OneToMany(mappedBy = "author")
+	//private java.util.List<Book> books;
 	
 	@SuppressWarnings("unused")
 	private Author() {} // for JPA
@@ -31,13 +31,13 @@ public class Author {
 		this.lastName = lName;
 	}
 
-	public java.util.List<Book> getBooks() {
+	/*public java.util.List<Book> getBooks() {
 		return books;
 	}
 
 	public void setBooks(java.util.List<Book> books) {
 		this.books = books;
-	}
+	}*/
 
 	public Long getId() {
 		return id;
